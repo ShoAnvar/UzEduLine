@@ -1,0 +1,209 @@
+*{
+	margin: 0;
+	font-family: montserrat, sans-serif;
+}
+body{
+	padding: 0;
+	background-image: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700445564.jpg);
+	background-size: cover;
+}
+i{
+	float: right;
+}
+
+header{
+	width: 100%;
+	background: rgb(0, 0, 0,0.7);
+	text-align: center;
+	color: #1aff1a;
+	font-size: 30px;
+	height: 100px;
+}
+
+
+.ah{
+	position: relative;
+	display: inline-block;
+	padding: 10px 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #1aff1a;
+	background: rgb(0, 0, 0,0.9); 
+	font-size: 16px;
+	margin: 10px;
+	letter-spacing: 3px;
+	width: 10%;
+}
+.ah span{
+	position: absolute;
+	display: block;
+	background: #1aff1a;
+}
+.ah span:nth-child(1){
+	left: 0;
+	bottom: 0;
+	width: 3px;
+	height: 100%;
+	transform: scaleY(0);
+	transform-origin: top;
+	transition: transform 0.65s;
+}
+
+.ah:hover span:nth-child(1){
+    transform: scaleY(1);
+	transform-origin: bottom;
+	transition: transform 0.65s;
+}
+
+
+
+.ah span:nth-child(2){
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 3px;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 0.65s;
+}
+.ah:hover span:nth-child(2){
+    transform: scaleY(1);
+	transform-origin: left;
+	transition: transform 0.65s;
+}
+
+.ah span:nth-child(3){
+	right: 0;
+	bottom: 0;
+	width: 3px;
+	height: 100%;
+	transform: scaleY(0);
+	transform-origin: top;
+	transition: transform 0.65s;
+}
+
+.ah:hover span:nth-child(3){
+    transform: scaleY(1);
+	transform-origin: top;
+	transition: transform 0.65s;
+}
+
+.ah span:nth-child(4){
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 3px;
+	transform: scaleY(0);
+	transform-origin: left;
+	transition: transform 0.65s;
+}
+
+.ah:hover span:nth-child(4){
+    transform: scaleY(1);
+	transform-origin: right;
+	transition: transform 0.65s;
+}
+
+
+#div{
+	padding-top: 30px;	
+}
+.contenier{
+	top: 100px;
+	position: relative;
+	width: 1100px;
+	display: flex;
+	flex-wrap: wrap;
+	transform-style: preserve-3d;
+	perspective: 500px;
+	margin-left: 110px;
+
+}
+.contenier .box{
+	position: relative;
+	width: 275px;
+	height: 275px;
+	background: #000;
+	transition: 0.5s;
+	transform-style: preserve-3d;
+	overflow: hidden;
+}
+.contenier:hover .box{
+	transform: rotateY(25deg);
+}
+
+.contenier .box:hover ~ .box{
+	transform: rotateY(-25deg);
+}
+.contenier .box:hover{
+	transform: rotateY(0deg) scale(1.25);
+	z-index: 1;
+	box-shadow: 0 25px 40px black;
+}
+
+.contenier .box .imgbox{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.contenier .box .imgbox:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0, 0, 0,0.9);
+	z-index: 1;
+	opacity: 0;
+	transition: 0.5s;
+	mix-blend-mode: multiply;
+}
+.contenier .box:hover .imgbox:before{
+	opacity: 1;
+}
+.contenier .box .imgbox img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.contenier .box .content{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	display: flex;
+	padding:20px;
+	align-items: flex-end;
+	box-sizing: border-box;
+}
+.contenier .box .content h2{
+	color: white;
+	transition: 0.5s;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	font-style: 20px;
+	transform: translateY(200px);
+}
+.contenier .box:hover .content h2{
+	transform: translateY(0px);
+	transition: 0.6s;
+}
+.contenier .box .content p{
+	color: white;
+	transition: 0.5s;
+	font-style: 14px;
+	transform: translateY(200px);
+}
+.contenier .box:hover .content p{
+	transform: translateY(0px);
+	transition: 0.6s;
+}

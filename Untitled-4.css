@@ -1,0 +1,233 @@
+body{
+    background: url(http://getwallpapers.com/wallpaper/full/e/5/5/1017117-vertical-wallpaper-library-2060x1236-high-resolution.jpg);
+}
+/* Navigation bar */
+#header{
+    padding-top: 15px;
+    opacity: 0.8;
+    height: 177.5px;
+}
+#h1{
+    margin-left: 500px;
+    display: inline-block;
+    text-align: center;
+    font-size: 50px;
+    color: gold;
+    text-shadow: 0 0 15px rgb(255, 255, 255);
+    animation-name: sarlavha;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes sarlavha{
+    0%{
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 15px #743903;
+    }
+    50%{
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 30px rgb(255, 0, 0);
+    }
+    100%{
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 15px #743903;
+    }
+}
+.box{
+	position: absolute;
+	top: 6%;
+	left: 80%;
+	transform: translate(-50%,-50%);
+	background-color: rgb(255, 255, 255);
+	height: 60px;
+	border-radius: 40px;
+	padding: 10px;
+}
+.box:hover > .txt{
+	width: 200px;
+	padding: 0 5px;
+    background: rgb(255, 255, 255);
+}
+.box:hover > .btn{
+    background: rgb(255, 255, 255);
+    opacity: 0.8;
+}
+.btn{
+	color: black;
+	float: right;
+	width: 40px;
+	height: 40px;
+	border-radius: 150%;
+	background:rgb(255, 255, 255);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.txt{
+	border:none;
+	background:none;
+	outline: none;
+	float: left;
+	padding: 0;
+	color: white;
+	font-size: 16px;
+	transition: 0.4s;
+	line-height: 40px;
+	width: 0px;
+}
+/* header */
+header .row{
+    margin-top: 15px;
+}
+header div .col{
+    /* text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    height: 74px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0 0 10px red;
+    transition:1s;
+    transition-timing-function: ease; */
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	padding: 10px 30px;
+	color: #743903;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: 2px;
+	font-size: 20px;
+	transition: 0.5s;
+}
+header div .col b{
+	color: rgb(255, 255, 255);
+    
+}
+header div .col:hover b{
+    text-decoration: none;
+	box-shadow: 0 0 30px #ff7b00;
+	color: rgb(255, 255, 255);
+    transition: 1s;
+}
+header div .col:hover{
+    /* top: 0px;
+    border-bottom: 4px solid goldenrod;
+    cursor: pointer;
+    color: gold;
+    font-size: 27px;
+    background: #000000;
+    text-shadow: 0 0 10px rgb(81, 255, 0); */
+    text-decoration: none;
+	background: #ff7b00;
+	box-shadow: 0 0 30px #ff7b00;
+    transition-delay: 0.10s; 
+    cursor: pointer;
+}
+header div .col:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 15px;
+	height: 80px;
+	border-top: 5px solid #ff7b00;
+	border-left: 2.5px solid #ff7b00;
+	transition: 0.5s;
+	transition-delay: 0.08s; 
+}
+header div .col:after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 15px;
+	height: 80px;
+	border-bottom: 5px solid #ff7b00;
+	border-right: 2.5px solid #ff7b00;
+	transition: 0.5s;
+	transition-delay: 0.08s; 
+}
+header div .col:hover:before{
+	width: 100%;
+	height: 100%;
+}
+header div .col:hover:after{
+	width: 100%;
+	height: 100%;
+}
+
+/* Aside part */
+aside{
+    float: left;
+    margin-top: 15px;
+    width: 20%;height: 600px;
+    opacity: 0.8;
+    background-color: #333333;
+    padding: 10px;
+}
+aside hr{
+    margin-left:-10px;
+    margin-right:-10px;
+    margin-top: 0px;
+    border: 2px solid white;
+    background-color: white;
+}
+aside h2{
+    color: white;
+    text-align: center;
+}
+/* main */
+main{
+    margin-top: 15px;
+    float: right;
+    width: 78%;height: 600px;
+    opacity: 0.8;
+    background-color: #333333;
+}
+main hr{
+    margin-top: 0px;
+    border: 2px solid white;
+    background-color: white;
+}
+main h2{
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+}
+main ul{
+    text-decoration: none;
+    color: #ff7b00;
+}
+/* footer */
+footer{
+    float: left;
+    opacity: 0.8;
+    width: 101%;
+    height: 200px;
+    bottom: 0px;
+    margin-top: 30px;
+    background-color: #333333;
+}
+footer h3, div{
+    color: white;
+    opacity: 1;
+    margin-top: 5px;
+    margin-left: 30px;
+    font-size: 30px;
+}
+footer i{
+    color: white;
+    font-size: 30px;
+}
+footer div a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
